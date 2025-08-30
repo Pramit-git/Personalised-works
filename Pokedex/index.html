@@ -34,12 +34,11 @@
     }
 
     #logo {
-        width: 100%;
+        width: 75%;
         margin: auto;
-        height: 50vh;
+        margin-left: 10%;
+        height: 55vh;
     }
-
-    #pokename {}
 
     #form-content {
         background: white;
@@ -107,13 +106,37 @@
         width: 50vh;
         height: 50vh;
     }
-    #images{
+
+    #images {
         display: flex;
         flex-direction: column;
     }
-    #pokemonspriteshiny{
+
+    #pokemonspriteshiny {
         width: 50vh;
         height: 50vh;
+    }
+
+    p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        backdrop-filter:inherit;
+        color: #fff;
+        font-size: 3rem;
+    }
+
+
+    .poke{
+        color: red;
+    }
+
+    .typed-text {
+        color: #20c20e;
+    }
+
+    .cursor {
+        background: #20c20e;
     }
 </style>
 
@@ -136,9 +159,19 @@
             <div id="name"></div>
             <hr>
             <div id="type"></div>
-            <span></span>
+            <div id="weight"></div>
+            <div id="height"></div>
         </div>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>
+        <span class="poke">Pokemon</span> Is <span class="typed-text"></span>
+        <span class="cursor">&nbsp;</span>
+    </p>
     <script src="script.js"></script>
 </body>
 
